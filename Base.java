@@ -34,6 +34,16 @@ public class Base {
 			driver = new FirefoxDriver();
 
 		}
+	
+		else if (browsername.equalsIgnoreCase("edge")) {
+
+			System.setProperty("webdriver.edge.driver",
+					"C:\\Users\\Lenovo\\eclipse-workspace\\Project\\Driver\\chromedriver.exe");
+
+			driver = new EdgeDriver();
+
+		}
+		
 		return driver;
 	}
 
